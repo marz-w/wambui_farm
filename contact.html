@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wambui's Farm | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2> Wambui's Farm</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Heading -->
+    <section class="page-header">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you!</p>
+    </section>
+
+    <!-- Contact Information and Form -->
+    <section class="section contact-container">
+
+        <!-- Contact Details and Map -->
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+
+            <p><strong>Farm:</strong> Wambui's Farm</p>
+            <p><strong>Phone:</strong> +254 700 000 000</p>
+            <p><strong>Email:</strong> info@wambuifarm.co.ke</p>
+            <p><strong>Location:</strong> Nairobi, Kenya</p>
+
+            <h3>Find Us on the Map</h3>
+
+            <iframe
+                src="https://maps.google.com/maps?q=Nairobi%2C%20Kenya&z=12&output=embed"
+                title="Google Map showing Nairobi, Kenya"
+                width="100%"
+                height="300"
+                style="border: 0;"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form action="#" method="post">
+
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required>
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                    required>
+
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    autocomplete="tel">
+
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="product">Product Inquiry</option>
+                    <option value="order">Place an Order</option>
+                    <option value="delivery">Delivery Inquiry</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">Your Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message here..."
+                    required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Wambui's Farm. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

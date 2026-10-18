@@ -1,0 +1,631 @@
+
+/* 1. GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+    color: #333;
+    background-color: #f7f9f4;
+}
+
+h1, h2, h3 {
+    font-family: 'Trebuchet MS', sans-serif;
+    line-height: 1.4;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+p {
+    margin-bottom: 12px;
+    line-height: 1.8;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* 2. NAV BAR */
+
+.navbar {
+    background-color: #245c36;
+    color: white;
+    padding: 18px 6%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navbar h2 {
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #c8e6a0;
+}
+
+
+/* 3. BUTTONS */
+
+.btn {
+    display: inline-block;
+    background-color: #4c8b3b;
+    color: white;
+
+    padding: 12px 22px;
+    border: none;
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    margin-top: 10px;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #245c36;
+    transform: translateY(-2px);
+}
+
+
+/* 4. HOME HERO IMAGE */
+
+.hero {
+    min-height: 420px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("images/greenhouse.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 44px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+
+/* 5. GENERAL SECTIONS */
+
+.section {
+    padding: 50px 6%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #245c36;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    margin-bottom: 22px;
+}
+
+.page-header {
+    background-color: #e5efdc;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.page-header h1 {
+    color: #245c36;
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    margin-bottom: 12px;
+}
+
+
+/* 6. PRODUCT CARDS */
+
+.products-section {
+    background-color: #ffffff;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    width: 260px;
+    padding: 15px;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.card h3 {
+    color: #245c36;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin: 12px 0;
+}
+
+.card p {
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+.price {
+    color: #4c8b3b;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+
+/* 7. NEWSLETTER */
+
+.subscribe {
+    background-color: #e5efdc;
+}
+
+.subscribe-form {
+    margin-top: 20px;
+}
+
+.subscribe input {
+    width: 250px;
+    max-width: 100%;
+    padding: 12px;
+    margin: 5px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* 8. VIDEO SECTION */
+
+.videos-section {
+    background-color: #f1f5ed;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.video-card {
+    background-color: white;
+    width: 320px;
+    max-width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.video-card iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    border: none;
+    border-radius: 7px;
+}
+
+.video-card h3 {
+    color: #245c36;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin: 12px 0 8px;
+}
+
+
+/* 9. PROFILE */
+
+.profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+    text-align: left;
+}
+
+.profile img {
+    width: 45%;
+    max-width: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.profile-content {
+    flex: 1;
+}
+
+.profile h2 {
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.profile h3 {
+    color: #245c36;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.profile ul {
+    padding-left: 22px;
+    margin-bottom: 15px;
+}
+
+.profile li {
+    margin-bottom: 6px;
+    line-height: 1.7;
+}
+
+
+/* 10. LOGIN */
+
+.login-section {
+    padding: 50px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color: white;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+    color: #245c36;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin-bottom: 10px;
+}
+
+.login-description {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-box label {
+    display: block;
+    text-align: left;
+    font-weight: 500;
+}
+
+.login-box input:not([type="checkbox"]) {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 18px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 5px 0 15px;
+}
+
+.remember-me input {
+    margin: 0;
+}
+
+.remember-me label {
+    font-weight: 400;
+}
+
+.login-box .btn {
+    width: 100%;
+}
+
+.login-note {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-note a {
+    color: #245c36;
+    text-decoration: none;
+}
+
+.login-note a:hover {
+    text-decoration: underline;
+}
+
+
+/* 11. CONTACT */
+
+.contact-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    text-align: left;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+    min-width: 0;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 12px;
+}
+
+.contact-info h3 {
+    color: #245c36;
+    font-weight: 500;
+    margin: 25px 0 12px;
+}
+
+.contact-info iframe {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* GENERAL FORM FIELDS */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #4c8b3b;
+    outline-offset: 1px;
+    border-color: #4c8b3b;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form label {
+    display: block;
+    text-align: left;
+    font-weight: 500;
+}
+
+
+/* 12. FOOTER */
+
+footer {
+    background-color: #193e26;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin-bottom: 0;
+    line-height: 1.7;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+
+/* 13. RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 90px 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+        letter-spacing: 0.3px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .section {
+        padding: 35px 5%;
+    }
+
+    .section h2 {
+        font-size: 25px;
+    }
+
+    .page-header h1 {
+        font-size: 28px;
+    }
+
+    .profile,
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .profile img {
+        width: 100%;
+        max-width: none;
+    }
+
+    .profile-content,
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .video-card {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .subscribe input {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .login-box {
+        padding: 22px;
+    }
+}
+
+
+/* SMALL MOBILE SCREENS */
+
+@media (max-width: 400px) {
+
+    .navbar h2 {
+        font-size: 20px;
+    }
+
+    .navbar ul {
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .page-header h1 {
+        font-size: 25px;
+    }
+}
